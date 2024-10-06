@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bingo Card Game</h1>
+    <div class="bingo-container">
+        <table id="bingo-card">
+            <!-- Bingo card rows and columns will be filled dynamically with JavaScript -->
+        </table>
+    </div>
+    <div class="controls">
+        <button id="generate-card">Generate New Card</button>
+        <button id="reset-card">Reset Card</button>
+        <p id="bingo-status"></p>
+    </div>
+
+    <script src="bingo.js">
+
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+            .then((reg) => console.log('Service Worker Registered', reg))
+            .catch((err) => console.log('Service Worker not registered', err));
+        }
+    </script>
+</body>
+</html>

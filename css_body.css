@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.bingo-container {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #333;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+td.marked {
+    background-color: #8BC34A;
+    color: white;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#bingo-status {
+    font-weight: bold;
+    margin-top: 15px;
+}
